@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>NexusAI — Autonomous Intelligence for Modern Business</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Sticky Frosted Navigation -->
+    <header class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="#" class="nav-logo" aria-label="NexusAI Home">
+                <svg class="nexus-mark" width="28" height="28" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <linearGradient id="nexusGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#FFFFFF" />
+                            <stop offset="55%" stop-color="#D4E4FC" />
+                            <stop offset="100%" stop-color="#2997FF" />
+                        </linearGradient>
+                        <radialGradient id="nexusGlow" cx="50%" cy="50%" r="50%">
+                            <stop offset="0%" stop-color="#2997FF" stop-opacity="0.3" />
+                            <stop offset="100%" stop-color="#2997FF" stop-opacity="0" />
+                        </radialGradient>
+                    </defs>
+                    <circle cx="20" cy="20" r="18" fill="url(#nexusGlow)" />
+                    <path d="M20 3 C20 12.5 12.5 20 3 20 C12.5 20 20 27.5 20 37 C20 27.5 27.5 20 37 20 C27.5 20 20 12.5 20 3 Z" fill="url(#nexusGrad)" />
+                    <circle cx="20" cy="20" r="2.8" fill="#000000" />
+                    <circle cx="20" cy="20" r="1.3" fill="#FFFFFF" />
+                </svg>
+                <span class="logo-text">Nexus<span class="logo-ai">AI</span></span>
+            </a>
+
+            <nav class="nav-menu" id="navMenu">
+                <a href="#capabilities" class="nav-link">Capabilities</a>
+                <a href="#demos" class="nav-link">Demos</a>
+                <a href="#process" class="nav-link">How It Works</a>
+                <a href="#pricing" class="nav-link">Pricing</a>
+                <a href="#contact" class="nav-cta-btn">Book Consultation</a>
+            </nav>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle Navigation" aria-expanded="false">
+                <span class="bar top-bar"></span>
+                <span class="bar mid-bar"></span>
+                <span class="bar bot-bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer Overlay -->
+    <div class="mobile-drawer" id="mobileDrawer">
+        <div class="drawer-links">
+            <a href="#capabilities" class="drawer-link">Capabilities</a>
+            <a href="#demos" class="drawer-link">Live Demos</a>
+            <a href="#process" class="drawer-link">How It Works</a>
+            <a href="#pricing" class="drawer-link">Pricing</a>
+            <a href="#contact" class="drawer-cta btn-primary">Book Consultation</a>
+        </div>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-backdrop">
+                <div class="ambient-glow glow-top"></div>
+                <div class="ambient-glow glow-center"></div>
+            </div>
+
+            <div class="container hero-container">
+                <div class="badge-pill">
+                    <span class="pill-dot"></span>
+                    <span>Autonomous AI Infrastructure</span>
+                </div>
+
+                <h1 class="hero-title">
+                    <span class="line-1">Intelligence.</span>
+                    <span class="line-2 gradient-silver">Automated.</span>
+                </h1>
+
+                <p class="hero-description">
+                    We engineer bespoke AI systems that reclaim 20+ hours every week.
+                    Chatbots, autonomous workflows, and real-time data pipelines — delivered in 3 to 5 days.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#contact" class="btn-primary">
+                        <span>Book Free Consultation</span>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                    <a href="#demos" class="btn-secondary">
+                        <span>Explore Live Demos</span>
+                        <span class="arrow">&darr;</span>
+                    </a>
+                </div>
+
+                <!-- Stats Ribbon -->
+                <div class="hero-metrics">
+                    <div class="metric-card">
+                        <div class="metric-number"><span class="counter" data-target="20">20</span><span class="metric-unit">hrs+</span></div>
+                        <div class="metric-title">Saved Per Week</div>
+                        <p class="metric-sub">Average across client deployments</p>
+                    </div>
+                    <div class="metric-divider"></div>
+                    <div class="metric-card">
+                        <div class="metric-number"><span class="counter" data-target="3">3</span><span class="metric-unit">days</span></div>
+                        <div class="metric-title">Deployment Speed</div>
+                        <p class="metric-sub">Turnkey delivery from call to launch</p>
+                    </div>
+                    <div class="metric-divider"></div>
+                    <div class="metric-card">
+                        <div class="metric-number"><span class="counter" data-target="50">50</span><span class="metric-unit">%</span></div>
+                        <div class="metric-title">Operating Cost Cut</div>
+                        <p class="metric-sub">Eliminates routine manual labor</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Capabilities (2x2 Glass Matrix) -->
+        <section class="section capabilities" id="capabilities">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="eyebrow">Capabilities</span>
+                    <h2 class="section-title">Four core systems built to scale.</h2>
+                    <p class="section-desc">Designed with surgical focus. We turn manual bottlenecks into automated profit centers.</p>
+                </div>
+
+                <div class="capabilities-grid">
+                    <!-- 01 -->
+                    <div class="glass-card feature-card">
+                        <div class="card-top">
+                            <span class="card-num">01 / CONVERSATIONAL</span>
+                            <span class="card-tag">Turnkey 3–5 Days</span>
+                        </div>
+                        <h3 class="card-title">Autonomous Support Agents</h3>
+                        <p class="card-desc">
+                            Deploy 24/7 conversational agents across your website, WhatsApp, and Instagram. Trained on your knowledge base to qualify inbound leads, schedule calendar appointments, and resolve 80% of customer support tickets instantly.
+                        </p>
+                        <div class="card-pills">
+                            <span class="pill">2-Second Latency</span>
+                            <span class="pill">Omnichannel</span>
+                            <span class="pill">Calendar Sync</span>
+                        </div>
+                    </div>
+
+                    <!-- 02 -->
+                    <div class="glass-card feature-card">
+                        <div class="card-top">
+                            <span class="card-num">02 / ORCHESTRATION</span>
+                            <span class="card-tag">Turnkey 2–4 Days</span>
+                        </div>
+                        <h3 class="card-title">Adaptive Workflow Engines</h3>
+                        <p class="card-desc">
+                            Connect 1,000+ business applications (Gmail, CRM, Stripe, Slack, Notion). When incoming events trigger, AI classifies intent, drafts hyper-personalized responses, updates your database, and alerts team members without human intervention.
+                        </p>
+                        <div class="card-pills">
+                            <span class="pill">Zero Data Entry</span>
+                            <span class="pill">Smart Routing</span>
+                            <span class="pill">Error Resilience</span>
+                        </div>
+                    </div>
+
+                    <!-- 03 -->
+                    <div class="glass-card feature-card">
+                        <div class="card-top">
+                            <span class="card-num">03 / INTELLIGENCE</span>
+                            <span class="card-tag">Turnkey 3–5 Days</span>
+                        </div>
+                        <h3 class="card-title">Document & Data Pipelines</h3>
+                        <p class="card-desc">
+                            Eliminate manual document handling. Ingest unstructured PDFs, invoices, receipts, intake forms, and contracts. AI extracts exact data points into structured databases and delivers executive summary reports directly to your inbox.
+                        </p>
+                        <div class="card-pills">
+                            <span class="pill">OCR & Vision</span>
+                            <span class="pill">Structured Export</span>
+                            <span class="pill">Weekly Digest</span>
+                        </div>
+                    </div>
+
+                    <!-- 04 -->
+                    <div class="glass-card feature-card">
+                        <div class="card-top">
+                            <span class="card-num">04 / STRATEGY</span>
+                            <span class="card-tag">Turnkey 1–2 Weeks</span>
+                        </div>
+                        <h3 class="card-title">Custom AI Architecture</h3>
+                        <p class="card-desc">
+                            A complete operational audit of your business. We pinpoint high-friction bottlenecks, design a bespoke implementation roadmap, and build tailored AI solutions that integrate seamlessly into your existing tech stack.
+                        </p>
+                        <div class="card-pills">
+                            <span class="pill">Systems Audit</span>
+                            <span class="pill">Bespoke Models</span>
+                            <span class="pill">Guaranteed ROI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Live Showcase Demos -->
+        <section class="section demos" id="demos">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="eyebrow">Interactive Showcase</span>
+                    <h2 class="section-title">See the systems in action.</h2>
+                    <p class="section-desc">Experience the exact user flows your customers and operations will enjoy.</p>
+                </div>
+
+                <div class="showcase-stack">
+                    <!-- Showcase Item 1: Chatbot -->
+                    <div class="showcase-card">
+                        <div class="showcase-copy">
+                            <span class="showcase-label">01 / Conversational</span>
+                            <h3>Your smartest team member. Online 24/7.</h3>
+                            <p>Trained directly on your FAQs, pricing sheets, and booking links. Resolves complex questions in 2 seconds while capturing high-intent leads.</p>
+                            <div class="stat-highlight">
+                                <strong>80%</strong> of inquiries resolved without human intervention
+                            </div>
+                        </div>
+                        <div class="showcase-preview">
+                            <div class="terminal-window">
+                                <div class="terminal-header">
+                                    <div class="window-dots">
+                                        <span></span><span></span><span></span>
+                                    </div>
+                                    <span class="window-title">Nexus AI Agent — Online</span>
+                                </div>
+                                <div class="terminal-body chat-stream">
+                                    <div class="chat-bubble bot-bubble">
+                                        <div class="bubble-avatar">N</div>
+                                        <div class="bubble-content">
+                                            Hello! Welcome to Apex Dental. Are you looking to schedule a consultation, or do you have a question about our treatments?
+                                        </div>
+                                    </div>
+                                    <div class="chat-bubble user-bubble">
+                                        <div class="bubble-content">
+                                            I need to book a cleaning and whitening session for next Thursday afternoon.
+                                        </div>
+                                    </div>
+                                    <div class="chat-bubble bot-bubble">
+                                        <div class="bubble-avatar">N</div>
+                                        <div class="bubble-content">
+                                            We have openings on Thursday, Oct 8 at <strong>2:30 PM</strong> and <strong>4:15 PM</strong> with Dr. Miller. Which time works best for you?
+                                            <div class="quick-options">
+                                                <button class="quick-chip">Select 2:30 PM</button>
+                                                <button class="quick-chip">Select 4:15 PM</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Showcase Item 2: Workflow -->
+                    <div class="showcase-card reverse">
+                        <div class="showcase-copy">
+                            <span class="showcase-label">02 / Workflow Orchestration</span>
+                            <h3>Instant response. Zero human lag.</h3>
+                            <p>When an inbound lead emails your team, NexusAI analyzes the intent, crafts an executive reply, enriches contact details, and notifies your sales team in Slack within 4 seconds.</p>
+                            <div class="stat-highlight">
+                                <strong>&lt; 5 sec</strong> response time from inbound email to lead outreach
+                            </div>
+                        </div>
+                        <div class="showcase-preview">
+                            <div class="terminal-window">
+                                <div class="terminal-header">
+                                    <div class="window-dots">
+                                        <span></span><span></span><span></span>
+                                    </div>
+                                    <span class="window-title">Pipeline Monitor — Live Sequence</span>
+                                </div>
+                                <div class="pipeline-flow">
+                                    <div class="pipeline-step">
+                                        <div class="step-badge icon-trigger">📧</div>
+                                        <div class="step-meta">
+                                            <strong>Inbound Email Received</strong>
+                                            <span>"Inquiry regarding enterprise rollout"</span>
+                                        </div>
+                                        <span class="step-status status-done">Success</span>
+                                    </div>
+                                    <div class="pipeline-connector"></div>
+                                    <div class="pipeline-step active-step">
+                                        <div class="step-badge icon-ai">✦</div>
+                                        <div class="step-meta">
+                                            <strong>AI Intent Analysis & Draft</strong>
+                                            <span>High-intent buyer &bull; Persona matched</span>
+                                        </div>
+                                        <span class="step-status status-ai">Real-time</span>
+                                    </div>
+                                    <div class="pipeline-connector"></div>
+                                    <div class="pipeline-step">
+                                        <div class="step-badge icon-action">✓</div>
+                                        <div class="step-meta">
+                                            <strong>CRM & Calendar Synced</strong>
+                                            <span>HubSpot deal created &bull; Slack alert posted</span>
+                                        </div>
+                                        <span class="step-status status-done">Done</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process (3 Steps) -->
+        <section class="section process" id="process">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="eyebrow">Process</span>
+                    <h2 class="section-title">From first call to live deployment.</h2>
+                    <p class="section-desc">Transparent, rapid, and turnkey. No lengthy meetings. Just working software.</p>
+                </div>
+
+                <div class="process-grid">
+                    <div class="process-card">
+                        <div class="process-number">01</div>
+                        <h3>Discovery Call</h3>
+                        <p>A focused 30-minute consultation. We evaluate your current operational tools, pinpoint high-impact automation opportunities, and scope expected ROI.</p>
+                        <span class="process-time">Day 1</span>
+                    </div>
+
+                    <div class="process-card">
+                        <div class="process-number">02</div>
+                        <h3>Bespoke Build</h3>
+                        <p>We architect and fine-tune your autonomous AI models and workflows. We stress-test edge cases, connect your APIs, and ensure ironclad reliability.</p>
+                        <span class="process-time">Days 2–4</span>
+                    </div>
+
+                    <div class="process-card">
+                        <div class="process-number">03</div>
+                        <h3>Launch & Warranty</h3>
+                        <p>We deploy directly into production, train your team, and provide 30 to 60 days of guaranteed optimization and maintenance support.</p>
+                        <span class="process-time">Day 5</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section class="section pricing" id="pricing">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="eyebrow">Investment</span>
+                    <h2 class="section-title">Transparent pricing. Measurable ROI.</h2>
+                    <p class="section-desc">Every package pays for itself within the first 60 days through saved labor hours.</p>
+                </div>
+
+                <div class="pricing-grid">
+                    <!-- Plan 1 -->
+                    <div class="pricing-card">
+                        <div class="plan-header">
+                            <span class="plan-name">Starter Chatbot</span>
+                            <div class="plan-price">
+                                <span class="currency">$</span>
+                                <span class="amount">500</span>
+                                <span class="period">/one-time</span>
+                            </div>
+                            <p class="plan-desc">For local businesses and solopreneurs needing 24/7 lead capture and booking.</p>
+                        </div>
+                        <ul class="plan-features">
+                            <li><span class="check">&check;</span> Custom AI Chatbot on Website or WhatsApp</li>
+                            <li><span class="check">&check;</span> Trained on your FAQs & company data</li>
+                            <li><span class="check">&check;</span> Direct appointment calendar sync</li>
+                            <li><span class="check">&check;</span> Automatic lead capture & email alerts</li>
+                            <li><span class="check">&check;</span> 30 days of free technical support</li>
+                        </ul>
+                        <a href="#contact" class="btn-outline">Select Starter Plan</a>
+                    </div>
+
+                    <!-- Plan 2 (Featured) -->
+                    <div class="pricing-card featured-plan">
+                        <div class="featured-badge">Most Popular</div>
+                        <div class="plan-header">
+                            <span class="plan-name">Workflow Engine</span>
+                            <div class="plan-price">
+                                <span class="currency">$</span>
+                                <span class="amount">1,000</span>
+                                <span class="period">/one-time</span>
+                            </div>
+                            <p class="plan-desc">End-to-end automation of up to 3 core repetitive operational bottlenecks.</p>
+                        </div>
+                        <ul class="plan-features">
+                            <li><span class="check">&check;</span> Up to 3 custom multi-app automated workflows</li>
+                            <li><span class="check">&check;</span> Intelligent inbound email intent analysis & drafts</li>
+                            <li><span class="check">&check;</span> Real-time CRM synchronization (HubSpot, Airtable)</li>
+                            <li><span class="check">&check;</span> Automated invoice, receipt, or alert dispatch</li>
+                            <li><span class="check">&check;</span> Performance dashboard & metrics tracking</li>
+                            <li><span class="check">&check;</span> 30 days of priority technical support</li>
+                        </ul>
+                        <a href="#contact" class="btn-primary">Select Workflow Plan</a>
+                    </div>
+
+                    <!-- Plan 3 -->
+                    <div class="pricing-card">
+                        <div class="plan-header">
+                            <span class="plan-name">Complete Suite</span>
+                            <div class="plan-price">
+                                <span class="currency">$</span>
+                                <span class="amount">1,500</span>
+                                <span class="period">/one-time</span>
+                            </div>
+                            <p class="plan-desc">The complete AI transformation: Chatbot + Workflow + Data Pipeline.</p>
+                        </div>
+                        <ul class="plan-features">
+                            <li><span class="check">&check;</span> Everything in Starter Chatbot & Workflow Engine</li>
+                            <li><span class="check">&check;</span> Automated PDF & document data extraction pipeline</li>
+                            <li><span class="check">&check;</span> Weekly automated executive performance digest</li>
+                            <li><span class="check">&check;</span> Multi-channel deployment (Web + Socials)</li>
+                            <li><span class="check">&check;</span> Full architecture documentation & handoff</li>
+                            <li><span class="check">&check;</span> 60 days of extended priority support</li>
+                        </ul>
+                        <a href="#contact" class="btn-outline">Select Complete Suite</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Proof / Testimonials -->
+        <section class="section testimonials">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="eyebrow">Proven Results</span>
+                    <h2 class="section-title">Built for founders who value time.</h2>
+                </div>
+
+                <div class="testimonials-grid">
+                    <div class="quote-card">
+                        <div class="stars">&starf;&starf;&starf;&starf;&starf;</div>
+                        <p class="quote-text">"NexusAI deployed a clinic chatbot that handles 80% of our patient inquiries. We went from 4 hours of daily telephone support to under 30 minutes."</p>
+                        <div class="quote-author">
+                            <div class="avatar-circle">S</div>
+                            <div>
+                                <strong>Dr. Sarah M.</strong>
+                                <span>Founder &bull; Apex Dental Clinic</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="quote-card">
+                        <div class="stars">&starf;&starf;&starf;&starf;&starf;</div>
+                        <p class="quote-text">"Our inbound real estate inquiries are now classified and responded to within seconds. Lead-to-showing conversion jumped by 35% in our first month."</p>
+                        <div class="quote-author">
+                            <div class="avatar-circle">M</div>
+                            <div>
+                                <strong>Michael R.</strong>
+                                <span>Managing Director &bull; Vanguard Realty</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="quote-card">
+                        <div class="stars">&starf;&starf;&starf;&starf;&starf;</div>
+                        <p class="quote-text">"I was personally spending 10 hours a week inputting order invoices. NexusAI built a document pipeline that automated the whole thing. Incredible ROI."</p>
+                        <div class="quote-author">
+                            <div class="avatar-circle">A</div>
+                            <div>
+                                <strong>Ahmed K.</strong>
+                                <span>Co-Founder &bull; Horizon Logistics</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Consultation Form -->
+        <section class="section contact" id="contact">
+            <div class="container">
+                <div class="contact-box">
+                    <div class="contact-header text-center">
+                        <span class="eyebrow">Start Today</span>
+                        <h2 class="section-title">Schedule your discovery call.</h2>
+                        <p class="section-desc">Get a complimentary automation audit and a clear roadmap for your business. Free &bull; Zero obligation.</p>
+                    </div>
+
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="fullName">Full Name</label>
+                                <input type="text" id="fullName" name="name" placeholder="Alex Morgan" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Work Email</label>
+                                <input type="email" id="email" name="email" placeholder="alex@company.com" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="industry">Industry</label>
+                                <select id="industry" name="industry" required>
+                                    <option value="" disabled selected>Select your industry</option>
+                                    <option value="Healthcare">Healthcare & Clinics</option>
+                                    <option value="Real Estate">Real Estate & Property</option>
+                                    <option value="E-commerce">E-commerce & Retail</option>
+                                    <option value="Agency">Marketing & Creative Agency</option>
+                                    <option value="Legal">Legal & Accounting</option>
+                                    <option value="Logistics">Logistics & Supply Chain</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="solution">Primary Need</label>
+                                <select id="solution" name="solution" required>
+                                    <option value="" disabled selected>Select an area</option>
+                                    <option value="Chatbot">AI Customer Support Agent ($500)</option>
+                                    <option value="Workflows">Workflow Automation Engine ($1,000)</option>
+                                    <option value="Complete">Complete AI Suite ($1,500)</option>
+                                    <option value="Consulting">Custom Operational Audit</option>
+                                    <option value="Advice">Not sure yet &bull; Need Guidance</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="bottleneck">What is your biggest manual time-waster?</label>
+                            <textarea id="bottleneck" name="bottleneck" rows="3" placeholder="E.g., We spend 3 hours daily answering the same patient inquiries and copying booking data..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-primary btn-submit">
+                            <span>Request Free Consultation</span>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </button>
+
+                        <div class="form-footer-note">
+                            <span>🔒 Confidential</span> &bull; <span>Response within 24 hours</span> &bull; <span>No sales pressure</span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-left">
+                <a href="#" class="footer-logo">
+                    <svg class="nexus-mark" width="22" height="22" viewBox="0 0 40 40" fill="none">
+                        <path d="M20 3 C20 12.5 12.5 20 3 20 C12.5 20 20 27.5 20 37 C20 27.5 27.5 20 37 20 C27.5 20 20 12.5 20 3 Z" fill="#FFFFFF" />
+                        <circle cx="20" cy="20" r="2.8" fill="#000000" />
+                        <circle cx="20" cy="20" r="1.3" fill="#FFFFFF" />
+                    </svg>
+                    <span>NexusAI</span>
+                </a>
+                <p class="footer-tagline">Architecting intelligent automation systems for modern enterprises.</p>
+            </div>
+
+            <div class="footer-nav">
+                <a href="#capabilities">Capabilities</a>
+                <a href="#demos">Demos</a>
+                <a href="#process">How It Works</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <div class="footer-copy">
+                &copy; 2026 NexusAI. Precision engineered. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
